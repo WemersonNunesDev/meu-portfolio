@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+
+:root {
+    --cor0: #DBC9FF;
+    --cor1: #B98CFC;
+    --cor2: #A050D9;
+    --cor3: #8241B0;
+    --cor4: #5E2A87;
+    --cor5: #3A235E;
+    --cor6: #130B1F;
+
+    --fonte-principal: "Poppins", cursive;
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+body {
+    font-family: var(--fonte-principal);
+    background-color: var(--cor6);
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    background-color: var(--cor6);
+}
+
+header .icone-titulo {
+    color: var(--cor0);
+    font-size: 56px;
+    margin: 10px;
+    border-radius: 25px;
+}
+
+header .icone-titulo:hover {
+    color: var(--cor3);
+    background-color: #dbc9ff2d;
+}
+
+nav {
+    float: inline-end;
+    margin-top: 20px;
+    padding-right: 120px;
+}
+
+nav > a {
+    color: var(--cor0);
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+nav > a:hover {
+    color: var(--cor3);
+    background-color: #dbc9ff2d;
+}
+
+main {
+    background-color: var(--cor6);
+    padding: 20px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+main p {
+    color: var(--cor0);
+    font-size: 3em;
+    text-align: left;
+    margin: 0px 0px 30px 100px;
+}
+
+aside {
+    text-align: center;
+    padding: 25px;
+    margin: 80px 400px 0px 400px;
+    background-color: #dbc9ff2d;
+    border-radius: 50px;
+}
+
+aside a {
+    
+    font-size: 48px;
+    color: var(--cor0);
+    padding: 10px;
+}
+
+aside a:hover {
+    color: var(--cor3);
+    border-radius: 20px;
+}
+
+
+footer {
+    font-family: var(--fonte-padrao);
+    text-align: center;
+    font-size: 1.1em;
+    padding: 5px;
+    color: var(--cor0);
+    background-color: var(--cor6);
+}
