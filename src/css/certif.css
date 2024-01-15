@@ -1,6 +1,5 @@
 @charset "UTF-8";
 
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
 
 @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined");
@@ -32,6 +31,7 @@
 .material-icons {
     color: var(--cor0);
 }
+
 body {
     font-family: var(--fonte-principal);
     background-color: var(--cor6);
@@ -66,7 +66,7 @@ nav {
     margin-top: 20px;
 }
 
-#inicio {
+#certificados {
     text-decoration: underline;
 }
 
@@ -85,53 +85,31 @@ nav > a:hover {
 }
 
 main {
-    background-color: var(--cor6);
     padding: 20px;
-    text-align: left;
-
     min-width: 320px;
-    max-width: 1290px;
+    max-width: 1080px;
     margin: auto;
     margin-bottom: 30px;
 }
 
-main p {
+#pag3 h1 {
     color: var(--cor0);
-    font-size: 3em;
-    max-width: 600px;
-    padding-left: 30px;
-    padding-right: 30px;
-    margin: auto;
-    margin-bottom: 30px;
-}
-
-#pag1 {
-    text-align: center;
-    max-width: 450px;
-    padding: 20px;
-    margin: auto;
-    border-radius: 50px;
-    background-color: var(--cor7);
-}
-
-#pag1 a {
-    font-size: 48px;
-    color: var(--cor0);
+    font-weight: normal;
+    font-size: 2.5em;
     padding: 10px;
-    max-width: 600px;
 }
 
-#pag1 a:hover {
-    color: var(--cor3);
-    border-radius: 20px;
-    transition-duration: 0.3s;
-}
-
-footer {
-    font-family: var(--fonte-padrao);
-    text-align: center;
-    font-size: 1.1em;
-    padding: 5px;
+#pag3 h2 {
     color: var(--cor0);
-    background-color: var(--cor6);
+    font-weight: normal;
+    padding: 10px;
+}
+
+a > .material-icons {
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+a > .material-icons:hover {
+    color: var(--cor3);
 }
