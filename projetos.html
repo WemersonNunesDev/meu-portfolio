@@ -7,48 +7,40 @@
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-    <link rel="stylesheet" href="./src/css/estilo-proj.css">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
 
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 </head>
 <body>
-    <header>
-        <a href="./index.html"><iconify-icon class="icone-titulo" icon="mynaui:letter-w"></a>
-
+    <header class="cabecalho">
+        <div class="logo">
+            <a href="./index.html">
+                <iconify-icon class="icone-titulo" icon="mynaui:letter-w"></iconify-icon>
+            </a>
+        </div>
         <nav>
-            <a href="./index.html">Inicio</a>
-            <a id="projetos" href="#">Projetos</a>
-            <a href="./certificados.html">Certificados</a>
-            <a href="#">Sobre mim</a>
+            <ul class="menu">
+                <li><a class="pag-home" href="./home.html">Home</a></li>
+                <li><a class="pag-projetos" href="./projetos.html">Projetos</a></li>
+                <li><a class="pag-certificados" href="./certificados.html">Certificados</a></li>
+            </ul>
         </nav>
     </header>
 
     <main>
-        <article id="pag2">
-            <h1>PROJETOS</h1>
-
-            <h2>Previsão do Tempo</h2>
-            <a href="https://previsao-do-tempo.wemerson.dev.br/" target="_blank"><span class="material-icons md-24">&#xe89e</span></a>
-
-            <p>Ferramento de previsão do tempo utilizando uma API</p>
-
-            <p>
-                <hr>
-            </p>
-
-            <h2>Selecione o X-MEN</h2>
-            <a href="https://x-men-personagens.wemerson.dev.br/" target="_blank"><span class="material-icons md-24">&#xe89e</span></a>
-
-            <p>Um tela de seleção de personagens com o tema de X-MEN</p>
-
-            <p>
-                <hr>
-            </p>
-        </article>
+        <div class="conteudo-projetos">
+            <div class="projetos">
+                <h1>PROJETOS</h1>
+                <h2>Previsão do Tempo</h2>
+                <a href="https://previsao-do-tempo.wemerson.dev.br/" target="_blank"><span class="material-icons md-24">&#xe89e</span></a>
+                <p>Ferramento de previsão do tempo utilizando uma API</p>
+                <h2>X-MEN selecione um personagem</h2>
+                <a href="https://x-men-personagens.wemerson.dev.br/" target="_blank"><span class="material-icons md-24">&#xe89e</span></a>
+                <p>Um tela de seleção de personagens com o tema de X-MEN</p>
+            </div>
+        </div>
     </main>
-
-    <footer>
-
-    </footer>
+    <footer class="rodape">Site criado por Wemerson Nunes</footer>
 </body>
 </html>

@@ -7,40 +7,37 @@
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-    <link rel="stylesheet" href="./src/css/certif.css">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
 
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 </head>
 <body>
-    <header>
-        <a href="./index.html">
-            <iconify-icon class="icone-titulo" icon="mynaui:letter-w"></iconify-icon>
-        </a>
-        
+    <header class="cabecalho">
+        <div class="logo">
+            <a href="./index.html">
+                <iconify-icon class="icone-titulo" icon="mynaui:letter-w"></iconify-icon>
+            </a>
+            <hr>
+        </div>
         <nav>
-            <a href="./index.html">Inicio</a>
-            <a href="./projetos.html">Projetos</a>
-            <a id="certificados" href="#">Certificados</a>
-            <a href="">Sobre mim</a>
+            <ul class="menu">
+                <li><a class="pag-home" href="./home.html">Home</a></li>
+                <li><a class="pag-projetos" href="./projetos.html">Projetos</a></li>
+                <li><a class="pag-certificados" href="./certificados.html">Certificados</a></li>
+            </ul>
         </nav>
     </header>
 
-    <main>
-        <article id="pag3">
+    <main class="conteudo-certificados">
+        <div class="lista-certificados">
             <h1>Certificados</h1>
-
-            <h2>HTML5 & CSS3: Módulo 2 de 5 - Com duração de 40 horas</h2>
-
-            <a href="./src/documentos/Wemerson-de-Oliveira-Nunes-Curso-HTML5-e-CSS3-modulo-2-de-5-40-HORAS-Certificado-Curso-em-Video.pdf" target="_blank"><span class="material-icons md-36">&#xe7af</span></a>
-
-            <p>
-                <hr>
-            </p>
-        </article>
-
-        <aside></aside>
+            <div class="certificado">
+                <h3>HTML5 & CSS3: Módulo 2 de 5 - Com duração de 40 horas</h3>
+                <a href="./src/documentos/Wemerson-de-Oliveira-Nunes-Curso-HTML5-e-CSS3-modulo-2-de-5-40-HORAS-Certificado-Curso-em-Video.pdf" target="_blank"><span class="material-icons md-36">&#xe7af</span></a>
+            </div>
+        </div>
     </main>
-
-    <footer></footer>
+    <footer class="rodape">Site criado por Wemerson Nunes</footer>
 </body>
 </html>

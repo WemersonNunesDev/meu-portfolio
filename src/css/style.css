@@ -1,0 +1,190 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+
+:root{
+    --cor00: #d9f9ff;
+    --cor01: #00D4FF;
+    --cor02: #090979;
+    --cor03: #020024;
+    --cor04: #010014;
+
+    --fonte-principal:"Poppins", cursive;
+    --fonte-padrao: Arial, Helvetica,sans-serif, Verdana;
+}
+
+body {
+    font-family: var(--fonte-principal);
+    color: var(--cor00);
+    background-color: var(--cor04);
+}
+
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    padding: 10px 80px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid var(--cor00);
+}
+
+.cabecalho .logo{
+    display: flex;
+    gap: 15px;
+}
+
+.cabecalho .menu{
+    display: flex;
+    gap: 30px;
+    padding: 10px;
+}
+
+.cabecalho .menu li a{
+    padding: 11px;
+}
+
+.cabecalho .menu li .pag-home:hover{
+    border-bottom: 4px solid #f73800;
+}
+
+.cabecalho .menu li .pag-projetos:hover{
+    border-bottom: 4px solid var(--cor02);
+}
+
+.cabecalho .menu li .pag-certificados:hover{
+    border-bottom: 4px solid #02d420;
+}
+
+.cabecalho .menu li .pag-sobre-mim:hover{
+    border-bottom: 4px solid #ece300;
+}
+
+.conteudo{
+    min-height: calc(100vh - 60px);
+}
+
+.informacoes{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.informacoes .capa{
+    width: 225px;
+    border: 2px solid #fff;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.informacoes .texto{
+    background-color: var(--cor03);
+    font-size: 1.6em;
+    padding: 30px 15px;
+    border: 1px solid #fff;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.texto p{
+    border-bottom: 1px solid #fff;
+}
+
+.informacoes .icone-rede-social img{
+    width: 60px;
+    margin: 50px 20px 0px 20px;
+}
+
+.informacoes .icone-rede-social a:hover{
+    color: var(--cor01);
+}
+
+.sobre-mim{
+    min-height: calc(100vh - 80px);
+}
+
+.texto-sobre-mim{
+    padding: 20px 120px;
+}
+
+.texto-sobre-mim h2{
+    text-align: center;
+}
+
+.texto-sobre-mim p{
+    text-align: justify;
+    padding-top: 10px;
+}
+
+.sobre-mim .logo-linguagens{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px 0px;
+}
+
+.logo-linguagens .logo-html{
+    width: 100px;
+    padding: 10px;
+}
+
+.logo-linguagens .logo-css{
+    width: 100px;
+    padding: 10px;
+}
+
+.logo-linguagens .logo-js{
+    width: 90px;
+    padding: 10px;
+}
+
+.conteudo-projetos{
+    display: flex;
+    justify-content: center;
+    padding: 0px 80px;
+    padding-bottom: 120px;
+}
+
+.projetos{
+    width: 800px;
+}
+
+.conteudo-projetos .projetos h2{
+    padding: 10px 0px;
+}
+
+.conteudo-projetos .projetos p{
+    border-bottom: 1px solid #fff;
+    padding: 10px 0px;
+}
+
+.material-icons:hover{
+    color: var(--cor01);
+}
+
+.cabecalho .logo{
+    font-size: 46px;
+}
+
+.conteudo-certificados{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 120px;
+}
+
+.lista-certificados{
+    text-align: center;
+}
+
+.certificado{
+    padding: 10px 0px;
+}
+
+.material-icons{
+    font-size: 36px;
+}
+
+.rodape{
+    background-color: var(--cor03);
+    text-align: center;
+    padding: 6px;
+}
