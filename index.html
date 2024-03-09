@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>home</title>
 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 
     <!--área CSS-->
     <link rel="stylesheet" href="./src/css/reset.css">
     <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/responsivo.css">
 </head>
 
 <body>
@@ -20,48 +22,77 @@
                 <iconify-icon class="icone-titulo" icon="mynaui:letter-w"></iconify-icon>
             </a>
         </div>
-        <nav>
-            <ul class="menu">
-                <li><a class="pag-home" href="#home">Home</a></li>
-                <li><a class="pag-projetos" href="./projetos.html">Projetos</a></li>
-                <li><a class="pag-certificados" href="./certificados.html">Certificados</a></li>
-            </ul>
-        </nav>
+
+        <div class="botoes">
+            <span class="material-icons md-36">&#xef4a</span>
+        </div>
     </header>
     <main class="conteudo">
-        <div class="informacoes">
-            <img class="capa" src="./src/imagens/capa-wemerson.jpg"
-                alt="Foto de casamento do programador Wemerson - desenvolvedor deste site">
-            <div class="texto">
-                <h1>Wemerson Nunes</h1>
-                <p>Futuro desenvolvedor FullStack</p>
-
-                <div class="icone-rede-social">
-                    <a href="#github"><img src="./src/favicon/mdi--github.svg" alt="Icone Git"></a>
-                    <a href="#linkedin"><img src="./src/favicon/mdi--linkedin.svg" alt="Icone Linkedin"></a>
-                    <a href="#instagram"><img src="./src/favicon/mdi--instagram.svg" alt="Icone Instagram"></a>
-                    <a href="#gmail"><img src="./src/favicon/mdi--gmail.svg" alt="Icone Gmail"></a>
-                </div>
-            </div>
-        </div>
-
         <section class="sobre-mim">
-            <div class="texto-sobre-mim">
-                <h2>Sobre mim</h2>
+            <div class="informacoes">
+                <h1>Wemerson Nunes</h1>
+                <h4>Desenvolvedor Front-end</h4>
+
                 <p>
-                    Sou um estudante autodidata que busca se consolidar nos fundamentos básicos como HTML5, CSS3 e
-                    JavaScript. Ansioso para avançar em novas tecnologias e frameworks.
+                    Sou um estudante autodidata com conhecimento no Front-End. Busco aprender o maximo que puder sobre
+                    novas tecnologias e me desenvolver profisionalmente.
                 </p>
 
-                <ul class="logo-linguagens">
-                    <li><img class="logo-html" src="./src/imagens/vscode-icons--html.svg" alt="Logo HTML5"></li>
-                    <li><img class="logo-css" src="./src/imagens/vscode-icons--css.svg" alt="Logo CSS3"></li>
-                    <li><img class="logo-js" src="./src/imagens/logos--javascript.svg" alt="Logo JavaScript"></li>
-                </ul>
+                <p>
+                    Curso de Analise e Desenvolvimento de Sistemas - incompleto. Conhecimento nas tecnologias HTML, CSS
+                    e JavaScript.
+                </p>
+            </div>
+
+            <picture>
+                <source media="(max-width: 670px)" srcset="./src/imagens/fotowemerson-225.png">
+                <img class="foto" src="./src/imagens/fotowemerson-pq.png" alt="Foto do desenvolvedor deste site">
+            </picture>
+
+        </section>
+
+        <section id="projetos">
+
+            <div class="inf-projetos">
+                <h1 id="titulo2">Projetos</h1>
+                <p>Todos os projetos foram feitos utilizando apenas HTML5, CSS3 e JavaScript. Nenhuma framework foi utilizada.</p>
+
+                <img class="logo-ling" src="./src/imagens/vscode-icons--html.svg" alt="Logo de HTML5">
+                <img class="logo-ling" src="./src/imagens/vscode-icons--css.svg" alt="Logo de CSS3">
+                <img class="logo-js" src="./src/imagens/logos--javascript.svg" alt="Logo de JavaScript">
+            </div>
+
+            <div class="projeto">
+                <h3>Previsão do Tempo</h3>
+                <a href="https://previsao-do-tempo.wemerson.dev.br/" target="_blank"><span
+                        class="material-icons md-24">&#xe89e</span></a>
+                <p>
+                    Ferramento de previsão do tempo utilizando uma API
+                </p>
+
+                <h3>Tela de seleção de personagens</h3>
+                <a href="https://x-men-personagens.wemerson.dev.br/" target="_blank"><span
+                        class="material-icons md-24">&#xe89e</span></a>
+                <p>Um tela de seleção de personagens com o tema de X-MEN</p>
+
+                <h3>Larning page GTA-V</h3>
+                <a href="https://gta5.wemerson.dev.br/" target="_blank"><span class="material-icons md-24">&#xe89e</span></a>
+                <p>Uma larning page com tema de GTA V</p>
+            </div>
+        </section>
+
+        <div class="txt-certificado">
+            <h1>Certificados</h1>
+        </div>
+
+        <section id="certificados">
+
+            <div id="cert-html-css">
+                <a href="./src/documentos/Wemerson-de-Oliveira-Nunes-Curso-HTML5-e-CSS3-modulo-2-de-5-40-HORAS-Certificado-Curso-em-Video.pdf" target="_blank"><span class="material-icons md-32">&#xe7af</span></a><h3>HTML5 & CSS3: Módulo 2 de 5 - Com duração de 40 horas</h3>
             </div>
         </section>
     </main>
-    <footer class="rodape">Site criado por Wemerson Nunes</footer>
+    <footer class="rodape">&copy;Wemerson Nunes</footer>
 </body>
 
 </html>

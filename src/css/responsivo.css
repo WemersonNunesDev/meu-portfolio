@@ -1,0 +1,75 @@
+@media (max-width: 930px) {
+    .conteudo {
+        margin: 10px 40px 20px 40px;
+    }
+
+    .sobre-mim {
+        padding: 20px 20px;
+    }
+
+    #projetos {
+        padding: 20px 20px;
+    }
+
+    .inf-projetos .logo-ling {
+        width: 100px;
+        padding: 6px;
+    }
+
+    .inf-projetos .logo-js {
+        width: 98px;
+        padding: 6px;
+    }
+}
+
+@media (max-width: 730px) {
+    #projetos {
+        padding: 20px 20px;
+    }
+
+    .inf-projetos .logo-ling {
+        width: 80px;
+        padding: 5px;
+    }
+
+    .inf-projetos .logo-js {
+        width: 72px;
+        padding: 5px;
+    }
+}
+
+@media (max-width: 670px) {
+    .conteudo {
+        margin: 10px 20px 20px 20px;
+    }
+
+    .sobre-mim {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 14px;
+        border-bottom: 1px solid;
+        text-align: center;
+    }
+
+    .sobre-mim .informacoes {
+        border-bottom: none;
+    }
+
+    .sobre-mim .foto {
+        border-bottom: none;
+        width: 175px;
+    }
+
+    #projetos {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px 16px;
+        border-bottom: 1px solid var(--cor04);
+    }
+
+    #projetos .inf-projetos {
+        width: 420px;
+        text-align: center;
+    }
+}
